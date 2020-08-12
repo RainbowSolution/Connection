@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivaccommodationimgId"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_75sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/indianstoreimage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/ivaccommodationimgId"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvtiffinnameId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="Sunil Kirana Grocery Store"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvdetailsId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvtiffinnameId"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="6th Floor, 611, Princess Business Skypark, PU-3 Commercial, Agra Bombay Rd, Scheme No 54, Indore, Madhya Pradesh 452010"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_6sdp"
+                    android:textStyle="normal" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdetailsId"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="Mob No: 7415228854"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_7sdp"
+                    android:textStyle="normal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdetailsId"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvopentextid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="Open- "
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_7sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvtimeId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_toEndOf="@+id/tvopentextid"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="10.00 Am"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_6sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvandmarkId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_toEndOf="@+id/tvtimeId"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="To"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_7sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvtimetooId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_toEndOf="@+id/tvandmarkId"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="7.00 Pm"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_6sdp"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

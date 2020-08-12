@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorWhite">
+
+
+    <RelativeLayout
+        android:id="@+id/RlUserProfileId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlbackId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/BackarrowId"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/backarrow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/BackarrowId"
+                android:text="@string/back"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSaveAndExitId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/nextarrowId"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/tvSaveexitId"
+                android:src="@drawable/nextarrow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSaveexitId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_and_exit"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/RlUserProfileId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rluserprofileID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivuserprofileimageId"
+                    android:layout_width="100dp"
+                    android:layout_height="100sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    app:civ_border_width="@dimen/_1sdp"
+                    app:civ_border_color="@color/ColorBlack"
+                    android:layout_marginEnd="15sp"
+                    android:src="@drawable/ic_person_black_24dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivuserprofileimageId"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/change_user_profile_photo"
+                    android:textColor="@color/TextColor"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rluserprofileID"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_85sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilNameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNameSignUpId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:hint="@string/full_name"
+                            android:paddingEnd="@dimen/_25sdp"
+                            android:singleLine="true"
+                            android:textSize="12sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilgenderId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etgenderId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:hint="@string/gender"
+                            android:paddingEnd="@dimen/_25sdp"
+                            android:singleLine="true"
+                            android:textSize="12sp" />
+
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilMobileNumberId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etMobileNumberId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:hint="@string/mobile_number"
+                            android:paddingEnd="@dimen/_25sdp"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textSize="12sp" />
+
+
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilemailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etemailId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:hint="@string/email_address"
+                            android:paddingEnd="@dimen/_25sdp"
+                            android:singleLine="true"
+                            android:textSize="12sp" />
+
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvchangepassID"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="@string/change_password"
+                        android:textColor="@color/TextColor"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvnotificationId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvchangepassID"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="@string/show_notification_on_home_screen"
+                        android:textColor="@color/TextColor"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/scProfileBtnId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvchangepassID"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvdeleteaccId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvnotificationId"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="Delete Account"
+                        android:textColor="@color/TextColor"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal"
+                        tools:ignore="HardcodedText" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

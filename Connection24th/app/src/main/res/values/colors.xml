@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01004e</color>
+    <color name="colorPrimaryDark">#01004e</color>
+    <color name="colorAccent">#01004e</color>
+    <color name="ColorWhite">#FFF</color>
+    <color name="ColorGray">#E1838383</color>
+    <color name="ColorBlack">#000</color>
+    <color name="colorcode">#01004e</color>
+    <color name="ColorFont">#545454</color>
+    <color name="Accommodation">#5650C9</color>
+    <color name="TiffinCentre">#E0434F</color>
+    <color name="Rides">#F79E3F</color>
+    <color name="Festivals">#09A08D</color>
+    <color name="HolyPlaces">#D07D4D</color>
+    <color name="IndianStores">#8DB2BC</color>
+    <color name="video">#4BCEDC</color>
+    <color name="TextColor">#0C1044</color>
+    <color name="logout">#071877</color>
+    <color name="togalbutton">#1d970f</color>
+    <color name="readcolor">#c32121</color>
+    <color name="white_gray">#ececec</color>
+    <color name="ride_color">#e0434f</color>
+    <color name="passenger_color">#f79e3f</color>
+
+</resources>

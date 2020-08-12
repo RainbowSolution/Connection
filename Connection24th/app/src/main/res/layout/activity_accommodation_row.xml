@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivaccommodationimgId"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_75sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/accommodationimage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_toEndOf="@+id/ivaccommodationimgId"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvhotelnameId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="Hyatt Pune"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvdetailsId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvhotelnameId"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_7sdp"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:id="@+id/rlBooknowId"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_below="@+id/tvdetailsId"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:background="@drawable/bluebtn">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="Book Now"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="@dimen/_6sdp"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdetailsId"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/rlBooknowId">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvtimeId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="60 mins"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_6sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvandmarkId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/tvtimeId"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="|"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvpaymentoptionId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_toEndOf="@+id/tvandmarkId"
+                        android:fontFamily="@font/rubik_light"
+                        android:text="Cash Payment Only"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_6sdp"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

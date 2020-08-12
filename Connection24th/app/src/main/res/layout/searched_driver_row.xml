@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    app:cardBackgroundColor="@color/white_gray"
+    android:background="@color/white_gray">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivVehicleImgId"
+            android:layout_width="0sp"
+            android:layout_weight=".25"
+            android:padding="@dimen/_3sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/car_main" />
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_weight=".55"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/asdId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                tools:ignore="RtlHardcoded,UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/liprofileId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivcontactuserId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/locationdrop_icon" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_toEndOf="@+id/liprofileId"
+                    android:layout_toRightOf="@+id/liprofileId">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/userNameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="Abc location"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <View
+                        android:id="@+id/nearlocationId"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_below="@+id/userNameId"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@color/ColorGray" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nearlocationId"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/rubik_regular"
+                                android:text="xyx Location"
+                                android:textColor="@color/ColorBlack"
+                                android:textSize="@dimen/_10sdp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0sp"
+            android:layout_weight=".20"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:text="$45"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/ColorBlack"
+            android:textSize="@dimen/_24sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0sp"
+            android:layout_weight=".25"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:text="By John Doe"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/ColorBlack"
+            android:textSize="@dimen/_8sdp" />
+        <View
+            android:layout_width="2sp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorBlack" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0sp"
+            android:layout_weight=".30"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Round : one way"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/ColorBlack"
+            android:textSize="@dimen/_8sdp" />
+        <View
+            android:layout_width="2sp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorBlack" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0sp"
+            android:layout_weight=".25"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Day : Mon-Sat"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:textColor="@color/ColorBlack"
+            android:textSize="@dimen/_8sdp" />
+        <View
+            android:layout_width="2sp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorBlack" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0sp"
+            android:layout_weight=".20"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Time:2pm"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:textColor="@color/ColorBlack"
+            android:textSize="@dimen/_8sdp" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

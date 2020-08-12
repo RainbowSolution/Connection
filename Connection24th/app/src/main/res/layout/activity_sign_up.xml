@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appback">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvsIGNINCaptionId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/rubik_light"
+            android:gravity="center"
+            android:text="@string/new_account"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/TvdummytextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsIGNINCaptionId"
+            android:layout_marginStart="@dimen/_26sdp"
+            android:layout_marginEnd="@dimen/_26sdp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry"
+            android:textColor="@color/ColorWhite"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="normal" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CvSigninId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvdummytextId"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilNameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNameId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:hint="@string/name"
+                            android:paddingEnd="@dimen/_25sdp"
+                            android:singleLine="true"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivNameId"
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:padding="3sp"
+                        android:src="@drawable/blackuser" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilNumberId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNumberId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:hint="@string/mobile"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingEnd="@dimen/_25sdp"
+                            android:singleLine="true"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivetNumberIdId"
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:padding="3sp"
+                        android:src="@drawable/blackmobile" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tipasswordId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etpasswordId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:maxLength="12"
+                            android:paddingEnd="@dimen/_25sdp"
+                            android:singleLine="true"
+                            android:textSize="13sp"
+                            tools:ignore="RtlSymmetry" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivetMobileNumberIdId"
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:padding="3sp"
+                        android:src="@drawable/blacklock" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/retarmconditionId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp">
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkboxtermconditionId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="10sp"
+                        android:buttonTint="@color/ColorGray"
+                        android:checked="true"
+                        android:singleLine="true"
+                        android:text="@string/i_accept_the_terms_and_policy"
+                        android:textColor="@color/ColorGray"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="normal"
+                        tools:targetApi="lollipop" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSignupId"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/btnback">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/TValreadyaccId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="@string/already_an_account"
+                        android:textColor="@color/ColorGray"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSigninId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/TValreadyaccId"
+                        android:fontFamily="@font/rubik_bold"
+                        android:text="@string/sign_in"
+                        android:textColor="@color/ColorBlack"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/TvSignInaccountasId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CvSigninId"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/sign_up_with_social_accounts"
+            android:textColor="@color/ColorWhite"
+            android:textSize="@dimen/_8sdp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvSignInaccountasId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivFacebookLoginId"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/facebook" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGoogleLoginId"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/ivFacebookLoginId"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/google" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

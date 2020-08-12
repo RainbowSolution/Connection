@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:background="@color/ColorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/as"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_button_shape">
+
+
+        <RelativeLayout
+            android:id="@+id/asdId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            tools:ignore="RtlHardcoded,UselessParent">
+
+            <LinearLayout
+                android:id="@+id/liprofileId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivcontactuserId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:src="@drawable/locationdrop_icon" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_toEndOf="@+id/liprofileId"
+                android:layout_toRightOf="@+id/liprofileId">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userNameId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="@string/my_current_location"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_12sdp" />
+
+                <View
+                    android:id="@+id/nearlocationId"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/userNameId"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/ColorGray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nearlocationId"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/rubik_regular"
+                            android:text="@string/drop_location"
+                            android:textColor="@color/ColorBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bsd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/asdId"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/repriceId"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/rectengle_price_minus"
+                android:fontFamily="@font/rubik_regular"
+                android:text="-100"
+                android:textAllCaps="false"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="RtlHardcoded" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/_50"
+                android:textColor="@color/ColorBlack"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rebidnowId"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/price_rectengal"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/amp_100"
+                android:textAllCaps="false"
+                android:textColor="@color/togalbutton"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/raiseFairId"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@+id/bsd"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/btnback">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Raise Fair"
+                android:textColor="@color/ColorWhite"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

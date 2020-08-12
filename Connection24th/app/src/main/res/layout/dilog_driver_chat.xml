@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_12sdp"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/button_shape_main_a"
+        android:paddingBottom="@dimen/_20sdp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvuserNameConfirmationId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="@string/rahul_maheswari"
+            android:textColor="@color/ColorBlack"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/lidrivernameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvuserNameConfirmationId"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvConfirmationTagId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/rubik_light"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/congratulation_johne_dow_has_accepled_your_offer_start_ride_with_him"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/limobileNumberId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lidrivernameId"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="10sp"
+                tools:ignore="UselessParent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAmountConfirmDialId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/rubik_bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/free_amount_amp_50"
+                    android:textColor="@color/ColorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/limobileNumberId"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/abchatIdmain"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/rectengle_price_minus"
+                android:text="@string/chat"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_9sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/acbCallId"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@drawable/rounded_btn"
+                android:text="@string/call"
+                android:textAllCaps="false"
+                android:textColor="@color/ColorWhite"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivcrossId"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/close" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfileConfirmedDialogeId"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/deriver_image"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="@dimen/_1sdp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlhalfbackgId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/halfbackg">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/rides"
+            android:textColor="@color/ColorWhite"
+            android:textSize="@dimen/_20sdp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/ColorWhite"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/rlsearchToolbarId"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/square_border">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etSeachId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="50sp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="Search Location"
+                    android:padding="5sp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivLogoHomeIds"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/search"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12sp"
+                android:id="@+id/ride_card"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/ride_color"
+                android:layout_below="@+id/rlsearchToolbarId"
+                app:cardElevation="2sp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0sp"
+                        android:layout_weight=".80"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="I AM Looking For Ride"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="0sp"
+                        android:layout_weight=".20"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:scaleType="fitXY"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:src="@drawable/profile"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12sp"
+                android:id="@+id/passengers_card"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/passenger_color"
+                android:layout_below="@+id/ride_card"
+                app:cardElevation="2sp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="I AM Looking For Passengers"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:src="@drawable/car_image"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rlHomeToolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:visibility="visible">
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlUserProfileId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivbackid"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/back_white_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLogoutHomeId"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/send_profile" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
